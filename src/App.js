@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import Identity from "./Identity";
+import Education from "./Education";
+import Counting from "./Counting";
+import Counting2 from "./Counting2";
 
 function App() {
+  const userObject = {
+    name: "Mhd Arif Setiawan",
+    address: "Bandung",
+  };
+
+  const educations = {
+    univ: "UGM",
+    jurusan: "Teknik Mesin",
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div>
+        <h1>Halaman React Pertamaku</h1>
+      </div>
+      <Identity user={userObject} />
+      <hr />
+      <Education educations={educations} />
+      <hr />
+      <Counting />
+      <Counting2 />
+    </>
   );
 }
 
