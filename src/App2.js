@@ -2,9 +2,6 @@ import { useState } from "react";
 import style from "./app.module.css";
 
 const App2 = (props) => {
-  // udah melakukan api call dan mendapatkan hasil berupa
-  // array of strings
-
   const [dataList] = useState(props.article);
 
   return (
@@ -19,6 +16,7 @@ const App2 = (props) => {
               <div className={style.imageArticle}>
                 <div
                   className={style.image}
+                  // image random by unsplash API
                   style={{
                     backgroundImage: `url("https://source.unsplash.com/random/${data.image}")`,
                   }}
