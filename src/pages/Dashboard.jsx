@@ -40,7 +40,13 @@ const Dashboard = () => {
             </Link>
           </button>
         </div>
-        <div className="h1Title ptb3">Post not found!</div>
+        <div
+          className="h1Title ptb3"
+          style={{ display: posts.length < 1 ? "" : "none" }}
+        >
+          Post not found!
+        </div>
+
         <div className="boxWrapper">
           {posts
             .sort((a, b) => b.id - a.id)

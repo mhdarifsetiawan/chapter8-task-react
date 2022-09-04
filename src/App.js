@@ -8,12 +8,13 @@ import Registration from "./pages/Registration";
 import Dashboard from "./pages/Dashboard";
 import CreatePost from "./pages/CreatePost";
 import EditPost from "./pages/EditPost";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
     <AppLayouts>
       <Routes>
-        <Route path="/" element={<div>Ini halaman HOME</div>} />
+        <Route path="/" element={<Home />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blogs/:postId" element={<DetailPost />} />
         <Route path="/login" element={<Login />} />

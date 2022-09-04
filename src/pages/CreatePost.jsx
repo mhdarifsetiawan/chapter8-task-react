@@ -10,7 +10,7 @@ const CreatePost = () => {
 
   const handleChange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value });
-    // console.log({ [e.target.name]: e.target.value });
+    console.log({ [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
@@ -42,7 +42,15 @@ const CreatePost = () => {
         <div className="formBody">
           <label for="body">Body : </label>
           <br />
-          <input id="body" name="body" type="text" onChange={handleChange} />
+          <textarea
+            id="body"
+            name="body"
+            type="text"
+            rows="10"
+            cols="50"
+            value={values.body}
+            onChange={handleChange}
+          ></textarea>
         </div>
         <div>
           <button type="submit">Submit</button>
