@@ -1,32 +1,29 @@
-import Identity from "./Identity";
-import Education from "./Education";
-import Counting from "./Counting";
-import Counting2 from "./Counting2";
+import { Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
+import AppLayouts from "./layouts/AppLayouts";
+import Blogs from "./pages/Blogs";
+import DetailPost from "./pages/DetailPost";
+import Login from "./pages/auth/login";
+import Registration from "./pages/Registration";
+import Dashboard from "./pages/Dashboard";
+import CreatePost from "./pages/CreatePost";
+import EditPost from "./pages/EditPost";
 
-function App() {
-  const userObject = {
-    name: "Mhd Arif Setiawan",
-    address: "Bandung",
-  };
-
-  const educations = {
-    univ: "UGM",
-    jurusan: "Teknik Mesin",
-  };
-
+const App = () => {
   return (
-    <>
-      <div>
-        <h1>Halaman React Pertamaku</h1>
-      </div>
-      <Identity user={userObject} />
-      <hr />
-      <Education educations={educations} />
-      <hr />
-      <Counting />
-      <Counting2 />
-    </>
+    <AppLayouts>
+      <Routes>
+        <Route path="/" element={<div>Ini halaman HOME</div>} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blogs/:postId" element={<DetailPost />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/registration" element={<Registration />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/posts/create" element={<CreatePost />} />
+        <Route path="/posts/:postId/edit" element={<EditPost />} />
+      </Routes>
+    </AppLayouts>
   );
-}
+};
 
 export default App;

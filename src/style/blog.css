@@ -1,0 +1,81 @@
+.h1Title {
+  text-align: center;
+}
+
+.boxWrapper {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+}
+.boxStyle {
+  position: relative;
+  background-color: #f3f3f3;
+  color: black;
+}
+
+.boxStyle > div > image {
+  background-color: #ffcb42;
+  width: 100%;
+  display: block;
+  min-height: 150px;
+  text-align: center;
+}
+
+.imageArticle {
+  width: 100%;
+  height: 200px;
+}
+
+.image {
+  background-size: cover;
+  height: 100%;
+}
+
+.postMeta {
+  position: absolute;
+  top: 0px;
+}
+
+.postMeta .category {
+  background-color: rgb(39, 39, 39);
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  font-weight: 600;
+  border-radius: 2px;
+  margin-right: 15px;
+  color: #fff;
+}
+
+a.category:hover {
+  background-color: #ff8700;
+}
+
+a {
+  cursor: pointer;
+}
+
+.title a {
+  min-height: 66px;
+  font-family: system-ui;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 15px 0px 15px;
+  display: block;
+  color: black;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:active {
+  text-decoration: underline;
+  color: rgb(90, 18, 18);
+}
+
+.body-posts {
+  font-size: 17px;
+}

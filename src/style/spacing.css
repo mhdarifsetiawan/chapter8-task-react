@@ -1,0 +1,76 @@
+/* ====> MARGIN <=== */
+.mauto {
+  margin: auto;
+}
+/* Margin (TOP, RIGHT, BOTTOM, LEFT) */
+.m1 {
+  margin: 5px;
+}
+.m2 {
+  margin: 7.5px;
+}
+.m3 {
+  margin: 10px;
+}
+
+/* Margin Top only */
+.mt1 {
+  margin-top: 5px;
+}
+.mt2 {
+  margin-top: 7.5px;
+}
+.mt3 {
+  margin-top: 10px;
+}
+
+/* Margin Bottom only */
+.mb1 {
+  margin-bottom: 5px;
+}
+.mb2 {
+  margin-bottom: 7.5px;
+}
+.mb3 {
+  margin-bottom: 10px;
+}
+
+/* Margin Top-Bot only */
+.mtb1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.mtb2 {
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
+}
+.mtb3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* ===> PADDING <=== */
+/* Padding (TOP, RIGHT, BOTTOM, LEFT)*/
+.p1 {
+  padding: 5px;
+}
+.p2 {
+  padding: 7.5px;
+}
+.p3 {
+  padding: 10px;
+}
+
+/* Padding Top-Bot only */
+.ptb1 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.ptb2 {
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+}
+.ptb3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
